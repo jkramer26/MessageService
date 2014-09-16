@@ -8,5 +8,5 @@ package messageservice;
 public interface MessageOutput {
     
     //will have a send message method that uses get message as parameter
-    public abstract String sendMessage();
+    public abstract void sendMessage(String message);
 }
