@@ -2,6 +2,6 @@
 package messageservice;
 
 
-public class MouseInput {
+public class MouseInput implements MessageInput {
     
 }
