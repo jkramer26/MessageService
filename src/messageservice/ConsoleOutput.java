@@ -13,9 +13,10 @@ public class ConsoleOutput implements MessageOutput {
         System.out.println(message);
     }
     
-    public static void main(String[] args) {
-        ConsoleOutput c = new ConsoleOutput();
-        
-        c.sendMessage("Hi");
-    }
+//    //test class
+//    public static void main(String[] args) {
+//        ConsoleOutput c = new ConsoleOutput();
+//        
+//        c.sendMessage("Hi");
+//    }
 }

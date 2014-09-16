@@ -10,7 +10,12 @@ public class MessageService {
     public static void main(String[] args) {
         // this is the starter class
         
-        //will only speak with the message controller class
+        MessageInput input = new KeyboardInput();
+        MessageOutput output = new ConsoleOutput();
+        
+        MessageController controller = new MessageController(input, output);
+        
+        controller.doMessageProcess();
     }
     
 }

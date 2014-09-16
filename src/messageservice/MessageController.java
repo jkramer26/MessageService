@@ -3,16 +3,27 @@ package messageservice;
 
 
 
-public abstract class MessageController {
+public class MessageController {
     //message output variable
-    //composition has-a relationship
-    //way to implement abstract class
-    MessageOutput output;
     //message input variable
     //composition has-a relationship
-    MessageInput input;
+    private MessageInput input;
+   
     
-    //complete message Process method where you will get message and then send it both
+    //composition has-a relationship
+    //way to implement abstract class
+    private MessageOutput output;
+    
+     public MessageController(MessageInput input, MessageOutput output) {
+        this.input = input;
+        this.output = output;
+    }
     
     
+    public void doMessageProcess() {
+        String message = input.getMessage();
+        
+        output.sendMessage(message);
+        
+    }
 }
