@@ -17,6 +17,7 @@ public class KeyboardInput implements MessageInput {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter in a message: ");
         
+        //Don't assume input will only be a single line 
         return keyboard.nextLine();
     }
 }
